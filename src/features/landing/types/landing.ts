@@ -1,4 +1,4 @@
-export type LandingFeature = {
+﻿export type LandingFeature = {
   title: string;
   description: string;
 };
@@ -20,4 +20,15 @@ export type ProductImage = {
   description: string;
   width: number;
   height: number;
+};
+
+export type GalleryModalState = {
+  isVisible: boolean;
+  isClosing: boolean;
+};
+
+export type ProductGalleryItem = {
+  image: ProductImage;
+  isActive: boolean;
+  onSelect: () => void;
 };
