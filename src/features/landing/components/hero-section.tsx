@@ -34,10 +34,10 @@ export function HeroSection() {
               Đăng ký nhận tin
             </a>
             <a
-              href="#specs"
+              href="#details"
               className="inline-flex h-12 items-center justify-center rounded-md border border-[#9db1ad] bg-white/70 px-6 text-sm font-semibold text-[#17212b]"
             >
-              Xem thông số
+              Xem chi tiết
             </a>
           </div>
         </div>

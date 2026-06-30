@@ -15,11 +15,11 @@ export function NewsletterSection() {
           </p>
         </div>
         <form
-          className="grid gap-4 rounded-lg border border-white/12 bg-white/8 p-5 sm:grid-cols-[1fr_1fr_auto] sm:p-6"
+          className="flex flex-col gap-4 rounded-lg border border-white/12 bg-white/8 p-5 sm:p-6 lg:flex-row lg:items-end"
           action="#"
           method="post"
         >
-          <label className="grid gap-2 text-sm font-medium text-[#e8f0f0]">
+          <label className="grid gap-2 text-sm font-medium text-[#e8f0f0] lg:flex-1">
             Họ và tên
             <input
               required
@@ -30,7 +30,7 @@ export function NewsletterSection() {
               className="h-12 rounded-md border border-white/15 bg-white px-4 text-sm text-[#17212b] outline-none"
             />
           </label>
-          <label className="grid gap-2 text-sm font-medium text-[#e8f0f0]">
+          <label className="grid gap-2 text-sm font-medium text-[#e8f0f0] lg:flex-1">
             Email
             <input
               required
@@ -43,7 +43,7 @@ export function NewsletterSection() {
           </label>
           <button
             type="submit"
-            className="mt-auto h-12 rounded-md bg-[#f2b36d] px-6 text-sm font-semibold text-[#17212b]"
+            className="h-12 w-full rounded-md bg-[#f2b36d] px-6 text-sm font-semibold whitespace-nowrap text-[#17212b] lg:w-40 lg:flex-none"
           >
             Gửi đăng ký
           </button>

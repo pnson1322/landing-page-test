@@ -1,4 +1,9 @@
-import type { LandingFeature, ProductSpec } from "@/types/landing";
+import type {
+  LandingFeature,
+  ProductDetail,
+  ProductImage,
+  ProductSpec,
+} from "@/types/landing";
 
 export const features: LandingFeature[] = [
   {
@@ -47,5 +52,58 @@ export const specs: ProductSpec[] = [
   {
     label: "Tương thích",
     value: "iOS, Android, Google Home, Apple Home",
+  },
+];
+
+export const productDetails: ProductDetail[] = [
+  {
+    title: "Bảy lớp dữ liệu môi trường",
+    description:
+      "AuraHub kết hợp dữ liệu CO2, PM2.5, VOC, nhiệt độ, độ ẩm, ánh sáng và tiếng ồn để đưa ra một bức tranh đầy đủ hơn về căn phòng.",
+  },
+  {
+    title: "Tín hiệu tại chỗ, không cần mở app",
+    description:
+      "Vòng sáng teal chuyển trạng thái theo chất lượng không khí, giúp bạn nhận biết lúc nào nên mở cửa, bật lọc khí hoặc giảm tiếng ồn.",
+  },
+  {
+    title: "Ngữ cảnh cho giấc ngủ",
+    description:
+      "Thiết bị ghi nhận môi trường trước và trong lúc ngủ, sau đó gom thành lịch sử theo đêm để bạn thấy nguyên nhân phòng quá nóng, bí hoặc ồn.",
+  },
+  {
+    title: "Thiết kế để đặt ở mọi phòng",
+    description:
+      "Thân máy nhỏ, vỏ nhựa tái chế mờ và lưới nhôm anodized giúp AuraHub hòa vào bàn làm việc, phòng ngủ hoặc kệ đầu giường.",
+  },
+];
+
+export const productImages: ProductImage[] = [
+  {
+    src: "/aurahub-angle.webp",
+    alt: "AuraHub nhìn từ góc nghiêng trong studio",
+    title: "Góc nghiêng sản phẩm",
+    description:
+      "Thân trụ nhỏ gọn, lưới cảm biến bao quanh và vòng sáng trạng thái ở cạnh đáy.",
+    width: 1200,
+    height: 799,
+  },
+  {
+    src: "/aurahub-detail.webp",
+    alt: "Cận cảnh lưới cảm biến và vòng sáng AuraHub",
+    title: "Chi tiết cảm biến",
+    description:
+      "Cụm lỗ thoáng giúp luồng khí đi qua đều hơn, đồng thời giữ vẻ ngoài tối giản.",
+    width: 1400,
+    height: 720,
+  },
+  {
+    src: "/aurahub-app.webp",
+    alt: "AuraHub đặt cạnh điện thoại hiển thị dashboard sức khỏe môi trường",
+    title: "Ứng dụng đồng bộ",
+    description:
+      "Dashboard gom chất lượng không khí, nhịp ngủ và xu hướng theo ngày trong một giao diện dễ đọc.",
+    width: 1400,
+    height: 715,
   },
 ];

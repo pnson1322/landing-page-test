@@ -14,6 +14,8 @@ export const siteConfig = {
   },
   navigation: [
     { label: "Tính năng", href: "#features" },
+    { label: "Chi tiết", href: "#details" },
+    { label: "Hình ảnh", href: "#gallery" },
     { label: "Thông số", href: "#specs" },
     { label: "Nhận tin", href: "#newsletter" },
   ],
