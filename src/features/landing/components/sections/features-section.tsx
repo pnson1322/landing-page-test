@@ -7,10 +7,10 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#c46c35]">
-            TĂ­nh nÄƒng ná»•i báº­t
+            Tính năng nổi bật
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-normal text-[#17212b] sm:text-4xl">
-            Má»™t trung tĂ¢m nhá» cho cháº¥t lÆ°á»£ng sá»‘ng má»—i ngĂ y.
+            Một trung tâm nhỏ cho chất lượng sống mỗi ngày.
           </h2>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -27,18 +27,18 @@ export function GalleryNavButtons({
       <button
         type="button"
         onClick={onPrevious}
-        aria-label="Xem áº£nh trÆ°á»›c"
+        aria-label="Xem ảnh trước"
         className={`pointer-events-auto flex ${sizeClass} items-center justify-center font-semibold transition duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:scale-100 ${buttonStyles[variant]}`}
       >
-        â€¹
+        ‹
       </button>
       <button
         type="button"
         onClick={onNext}
-        aria-label="Xem áº£nh tiáº¿p theo"
+        aria-label="Xem ảnh tiếp theo"
         className={`pointer-events-auto flex ${sizeClass} items-center justify-center font-semibold transition duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:scale-100 ${buttonStyles[variant]}`}
       >
-        â€º
+        ›
       </button>
     </div>
   );

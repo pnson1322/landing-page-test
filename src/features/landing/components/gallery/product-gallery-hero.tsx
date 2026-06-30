@@ -25,7 +25,7 @@ export function ProductGalleryHero({
         <button
           type="button"
           onClick={onOpen}
-          aria-label="Má»Ÿ áº£nh sáº£n pháº©m phĂ³ng to"
+          aria-label="Mở ảnh sản phẩm phóng to"
           className="group block h-full w-full cursor-zoom-in overflow-hidden text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e]"
         >
           <Image

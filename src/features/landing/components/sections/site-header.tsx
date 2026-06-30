@@ -5,7 +5,7 @@ export function SiteHeader() {
     <header className="fixed left-0 right-0 top-0 z-30 px-4 pt-4 sm:px-8">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between rounded-lg border border-white/55 bg-[#f7f5f0]/82 px-4 py-3 shadow-[0_18px_60px_rgba(23,33,43,0.14)] backdrop-blur-xl sm:px-5"
-        aria-label="Äiá»u hÆ°á»›ng chĂ­nh"
+        aria-label="Điều hướng chính"
       >
         <a
           className="rounded-md text-lg font-semibold tracking-normal text-[#17212b] transition duration-200 hover:-translate-y-0.5 hover:text-[#147a7e] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e] active:translate-y-0 active:text-[#0d5f63]"

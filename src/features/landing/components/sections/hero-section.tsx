@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative flex min-h-[86svh] items-center">
       <Image
         src={siteConfig.heroImage.src}
-        alt="Thiáº¿t bá»‹ AuraHub Ä‘áº·t trĂªn bĂ n trong khĂ´ng gian sá»‘ng hiá»‡n Ä‘áº¡i"
+        alt="Thiết bị AuraHub đặt trên bàn trong không gian sống hiện đại"
         fill
         priority
         sizes="100vw"
@@ -24,21 +24,21 @@ export function HeroSection() {
             AuraHub
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-[#40515d] sm:text-xl">
-            Thiáº¿t bá»‹ thĂ´ng minh theo dĂµi khĂ´ng khĂ­, tiáº¿ng á»“n, Ă¡nh sĂ¡ng vĂ  giáº¥c
-            ngá»§, giĂºp khĂ´ng gian sá»‘ng sáº¡ch hÆ¡n vĂ  dá»… nghá»‰ ngÆ¡i hÆ¡n.
+            Thiết bị thông minh theo dõi không khí, tiếng ồn, ánh sáng và giấc
+            ngủ, giúp không gian sống sạch hơn và dễ nghỉ ngơi hơn.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#newsletter"
               className="inline-flex h-12 items-center justify-center rounded-md bg-[#147a7e] px-6 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(20,122,126,0.22)] transition duration-200 hover:-translate-y-1 hover:bg-[#0d5f63] hover:shadow-[0_22px_42px_rgba(20,122,126,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e] active:translate-y-0 active:bg-[#093f43]"
             >
-              ÄÄƒng kĂ½ nháº­n tin
+              Đăng ký nhận tin
             </a>
             <a
               href="#details"
               className="inline-flex h-12 items-center justify-center rounded-md border border-[#9db1ad] bg-white/75 px-6 text-sm font-semibold text-[#17212b] backdrop-blur transition duration-200 hover:-translate-y-1 hover:border-[#147a7e] hover:bg-[#17212b] hover:text-white hover:shadow-[0_18px_36px_rgba(23,33,43,0.18)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e] active:translate-y-0 active:bg-[#0f171e]"
             >
-              Xem chi tiáº¿t
+              Xem chi tiết
             </a>
           </div>
         </div>

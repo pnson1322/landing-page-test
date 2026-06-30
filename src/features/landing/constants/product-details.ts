@@ -1,7 +1,7 @@
-﻿export const trackedSignals = ["PM2.5", "CO2", "VOC", "Nhiá»‡t Ä‘á»™", "Äá»™ áº©m"];
+﻿export const trackedSignals = ["PM2.5", "CO2", "VOC", "Nhiệt độ", "Độ ẩm"];
 
 export const productMetrics = [
-  { value: "7", label: "tĂ­n hiá»‡u mĂ´i trÆ°á»ng" },
-  { value: "24/7", label: "theo dĂµi liĂªn tá»¥c" },
-  { value: "<4W", label: "tiĂªu thá»¥ Ä‘iá»‡n" },
+  { value: "7", label: "tín hiệu môi trường" },
+  { value: "24/7", label: "theo dõi liên tục" },
+  { value: "<4W", label: "tiêu thụ điện" },
 ];

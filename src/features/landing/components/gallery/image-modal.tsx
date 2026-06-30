@@ -66,10 +66,10 @@ export function ImageModal({
       <button
         type="button"
         onClick={onClose}
-        aria-label="ÄĂ³ng áº£nh phĂ³ng to"
+        aria-label="Đóng ảnh phóng to"
         className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/86 text-2xl leading-none text-[#17212b] shadow-[0_16px_38px_rgba(0,0,0,0.28)] backdrop-blur-xl transition duration-200 hover:scale-105 hover:bg-white hover:shadow-[0_22px_48px_rgba(0,0,0,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:scale-100 sm:right-6 sm:top-6"
       >
-        Ă—
+        ×
       </button>
     </div>
   );

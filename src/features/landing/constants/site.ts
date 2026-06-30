@@ -3,9 +3,9 @@
   url: "https://aurahub.vn",
   title: "AuraHub | Smart Air Quality & Sleep Monitor",
   description:
-    "Landing page giá»›i thiá»‡u AuraHub, thiáº¿t bá»‹ thĂ´ng minh theo dĂµi cháº¥t lÆ°á»£ng khĂ´ng khĂ­, giáº¥c ngá»§ vĂ  mĂ´i trÆ°á»ng sá»‘ng trong nhĂ .",
+    "Landing page giới thiệu AuraHub, thiết bị thông minh theo dõi chất lượng không khí, giấc ngủ và môi trường sống trong nhà.",
   openGraphDescription:
-    "Thiáº¿t bá»‹ thĂ´ng minh giĂºp theo dĂµi khĂ´ng khĂ­, giáº¥c ngá»§ vĂ  Ä‘iá»u kiá»‡n sá»‘ng trong nhĂ  theo thá»i gian thá»±c.",
+    "Thiết bị thông minh giúp theo dõi không khí, giấc ngủ và điều kiện sống trong nhà theo thời gian thực.",
   heroImage: {
     src: "/aurahub-hero.webp",
     width: 1600,
@@ -13,10 +13,10 @@
     alt: "AuraHub smart air quality and sleep monitor",
   },
   navigation: [
-    { label: "TĂ­nh nÄƒng", href: "#features" },
-    { label: "Chi tiáº¿t", href: "#details" },
-    { label: "HĂ¬nh áº£nh", href: "#gallery" },
-    { label: "ThĂ´ng sá»‘", href: "#specs" },
-    { label: "Nháº­n tin", href: "#newsletter" },
+    { label: "Tính năng", href: "#features" },
+    { label: "Chi tiết", href: "#details" },
+    { label: "Hình ảnh", href: "#gallery" },
+    { label: "Thông số", href: "#specs" },
+    { label: "Nhận tin", href: "#newsletter" },
   ],
 };

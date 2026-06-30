@@ -19,7 +19,7 @@ export function ProductDetailsSection() {
           <div className="relative min-h-[440px] overflow-hidden rounded-lg border border-[#d8d2c7] bg-[#17212b] shadow-[0_24px_70px_rgba(23,33,43,0.14)]">
             <Image
               src="/aurahub-angle.webp"
-              alt="AuraHub nhĂ¬n tá»« gĂ³c nghiĂªng trong studio"
+              alt="AuraHub nhìn từ góc nghiêng trong studio"
               fill
               sizes="(min-width: 1024px) 46vw, 100vw"
               className="object-cover opacity-95 transition duration-500 hover:scale-[1.02]"
@@ -43,15 +43,15 @@ export function ProductDetailsSection() {
 
           <div className="rounded-lg border border-white/14 bg-white p-6 shadow-[0_30px_90px_rgba(0,0,0,0.22)] sm:p-8 lg:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#c46c35]">
-              Xem chi tiáº¿t sáº£n pháº©m
+              Xem chi tiết sản phẩm
             </p>
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-normal text-[#17212b] sm:text-4xl">
-              Má»™t thiáº¿t bá»‹ nhá» Ä‘á»ƒ Ä‘á»c rĂµ cháº¥t lÆ°á»£ng khĂ´ng gian sá»‘ng.
+              Một thiết bị nhỏ để đọc rõ chất lượng không gian sống.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-[#53616b]">
-              AuraHub gom dá»¯ liá»‡u phĂ²ng á»Ÿ theo ngá»¯ cáº£nh, giĂºp báº¡n hiá»ƒu khi nĂ o
-              khĂ´ng khĂ­ bĂ­, khi nĂ o phĂ²ng quĂ¡ á»“n vĂ  Ä‘iá»u gĂ¬ Ä‘ang áº£nh hÆ°á»Ÿng tá»›i
-              cháº¥t lÆ°á»£ng nghá»‰ ngÆ¡i.
+              AuraHub gom dữ liệu phòng ở theo ngữ cảnh, giúp bạn hiểu khi nào
+              không khí bí, khi nào phòng quá ồn và điều gì đang ảnh hưởng tới
+              chất lượng nghỉ ngơi.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-2">
