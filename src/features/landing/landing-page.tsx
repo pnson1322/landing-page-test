@@ -1,9 +1,11 @@
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
-import { FeaturesSection } from "@/features/landing/components/features-section";
-import { HeroSection } from "@/features/landing/components/hero-section";
-import { NewsletterSection } from "@/features/landing/components/newsletter-section";
-import { SpecsSection } from "@/features/landing/components/specs-section";
+﻿import { FeaturesSection } from "@/features/landing/components/sections/features-section";
+import { HeroSection } from "@/features/landing/components/sections/hero-section";
+import { NewsletterSection } from "@/features/landing/components/sections/newsletter-section";
+import { ProductDetailsSection } from "@/features/landing/components/sections/product-details-section";
+import { ProductGallerySection } from "@/features/landing/components/sections/product-gallery-section";
+import { SiteFooter } from "@/features/landing/components/sections/site-footer";
+import { SiteHeader } from "@/features/landing/components/sections/site-header";
+import { SpecsSection } from "@/features/landing/components/sections/specs-section";
 
 export function LandingPage() {
   return (
@@ -11,6 +13,8 @@ export function LandingPage() {
       <SiteHeader />
       <HeroSection />
       <FeaturesSection />
+      <ProductDetailsSection />
+      <ProductGallerySection />
       <SpecsSection />
       <NewsletterSection />
       <SiteFooter />
