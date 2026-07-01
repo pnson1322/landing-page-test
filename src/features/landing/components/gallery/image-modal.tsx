@@ -31,7 +31,7 @@ export function ImageModal({
       role="dialog"
       aria-modal="true"
       aria-label={image.title}
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-md ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-modal-backdrop p-4 backdrop-blur-md ${
         modal.isClosing
           ? "gallery-modal-backdrop-exit"
           : "gallery-modal-backdrop-enter"
@@ -52,7 +52,7 @@ export function ImageModal({
           alt={image.alt}
           fill
           sizes="90vw"
-          className="object-contain drop-shadow-[0_34px_88px_rgba(0,0,0,0.38)]"
+          className="object-contain drop-shadow-[var(--shadow-modal)]"
           priority
         />
         <ModalCaption title={image.title} description={image.description} />
@@ -66,10 +66,10 @@ export function ImageModal({
       <button
         type="button"
         onClick={onClose}
-        aria-label="ÄĂ³ng áº£nh phĂ³ng to"
-        className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/86 text-2xl leading-none text-[#17212b] shadow-[0_16px_38px_rgba(0,0,0,0.28)] backdrop-blur-xl transition duration-200 hover:scale-105 hover:bg-white hover:shadow-[0_22px_48px_rgba(0,0,0,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:scale-100 sm:right-6 sm:top-6"
+        aria-label="Đóng ảnh phóng to"
+        className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-surface/86 text-2xl leading-none text-text-primary shadow-elevated backdrop-blur-xl transition duration-200 hover:scale-105 hover:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-surface active:scale-100 sm:right-6 sm:top-6"
       >
-        Ă—
+        ×
       </button>
     </div>
   );
