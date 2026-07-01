@@ -13,6 +13,8 @@ export function useProductGallery() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalClosing, setIsModalClosing] = useState(false);
   const closeTimeoutRef = useRef<number | null>(null);
+  const hasSyncedActiveItemRef = useRef(false);
+  const itemRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const activeImage = productImages[activeIndex];
   const isModalVisible = isModalOpen || isModalClosing;
@@ -71,6 +73,13 @@ export function useProductGallery() {
     event.stopPropagation();
   }, []);
 
+  const registerGalleryItem = useCallback(
+    (index: number) => (element: HTMLButtonElement | null) => {
+      itemRefs.current[index] = element;
+    },
+    [],
+  );
+
   const galleryItems: ProductGalleryItem[] = useMemo(
     () =>
       productImages.map((image, index) => ({
@@ -88,6 +97,18 @@ export function useProductGallery() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    if (!hasSyncedActiveItemRef.current) {
+      hasSyncedActiveItemRef.current = true;
+      return;
+    }
+
+    itemRefs.current[activeIndex]?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+  }, [activeIndex]);
 
   useEffect(() => {
     if (!isModalVisible) {
@@ -129,6 +150,7 @@ export function useProductGallery() {
     },
     closeModal,
     openModal,
+    registerGalleryItem,
     showNext,
     showPrevious,
     stopModalContentClick,

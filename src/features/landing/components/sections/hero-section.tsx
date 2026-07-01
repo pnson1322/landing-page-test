@@ -1,45 +1,44 @@
-﻿import Image from "next/image";
-
+import { ButtonLink } from "@/features/landing/components/ui/button-link";
 import { siteConfig } from "@/features/landing/constants/site";
+import { layoutStyles } from "@/features/landing/constants/styles";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[86svh] items-center">
-      <Image
-        src={siteConfig.heroImage.src}
-        alt="Thiết bị AuraHub đặt trên bàn trong không gian sống hiện đại"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-[62%_center]"
+    <section
+      className="relative overflow-hidden bg-background pt-24 sm:pt-28"
+      aria-label="AuraHub"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-[position:62%_center]"
+        style={{ backgroundImage: `url(${siteConfig.heroImage.src})` }}
+        aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,245,240,0.96)_0%,rgba(247,245,240,0.82)_42%,rgba(247,245,240,0.18)_72%,rgba(247,245,240,0.04)_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(180deg,rgba(247,245,240,0)_0%,#f7f5f0_100%)]" />
-      <div className="relative z-10 mx-auto max-w-7xl px-5 pt-24 sm:px-8">
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/76 to-background/10 lg:via-background/68 lg:to-transparent"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-y-0 left-0 w-2/5 bg-[radial-gradient(circle_at_20%_50%,var(--primary-light),transparent_64%)] opacity-45 blur-3xl"
+        aria-hidden="true"
+      />
+
+      <div className={`${layoutStyles.container} relative py-20 sm:py-24 lg:py-28`}>
         <div className="max-w-2xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#147a7e]">
+          <p className="inline-flex w-fit rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
             Smart wellness monitor
           </p>
-          <h1 className="text-5xl font-semibold leading-[1.02] tracking-normal text-[#17212b] sm:text-6xl lg:text-7xl">
+          <h1 className="mt-5 text-5xl font-semibold leading-[1.02] tracking-normal text-text-primary sm:text-6xl lg:text-7xl">
             AuraHub
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-[#40515d] sm:text-xl">
+          <p className="mt-6 max-w-xl text-lg leading-8 text-text-secondary sm:text-xl">
             Thiết bị thông minh theo dõi không khí, tiếng ồn, ánh sáng và giấc
             ngủ, giúp không gian sống sạch hơn và dễ nghỉ ngơi hơn.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#newsletter"
-              className="inline-flex h-12 items-center justify-center rounded-md bg-[#147a7e] px-6 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(20,122,126,0.22)] transition duration-200 hover:-translate-y-1 hover:bg-[#0d5f63] hover:shadow-[0_22px_42px_rgba(20,122,126,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e] active:translate-y-0 active:bg-[#093f43]"
-            >
-              Đăng ký nhận tin
-            </a>
-            <a
-              href="#details"
-              className="inline-flex h-12 items-center justify-center rounded-md border border-[#9db1ad] bg-white/75 px-6 text-sm font-semibold text-[#17212b] backdrop-blur transition duration-200 hover:-translate-y-1 hover:border-[#147a7e] hover:bg-[#17212b] hover:text-white hover:shadow-[0_18px_36px_rgba(23,33,43,0.18)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e] active:translate-y-0 active:bg-[#0f171e]"
-            >
+            <ButtonLink href="#newsletter">Đăng ký nhận tin</ButtonLink>
+            <ButtonLink href="#details" variant="secondary">
               Xem chi tiết
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </div>

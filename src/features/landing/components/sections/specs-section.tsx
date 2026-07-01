@@ -1,25 +1,21 @@
-﻿import { SpecRow } from "@/features/landing/components/sections/spec-row";
+import { SpecRow } from "@/features/landing/components/sections/spec-row";
+import { SectionHeader } from "@/features/landing/components/ui/section-header";
+import { layoutStyles, sectionStyles } from "@/features/landing/constants/styles";
 import { specs } from "@/features/landing/data";
 
 export function SpecsSection() {
   return (
-    <section id="specs" className="bg-[#edf4f2] py-20 sm:py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#147a7e]">
-            Thông số kỹ thuật
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-normal text-[#17212b] sm:text-4xl">
-            Gọn gàng trên bàn, đủ sâu cho dữ liệu môi trường.
-          </h2>
-          <p className="mt-5 text-base leading-7 text-[#53616b]">
-            AuraHub được thiết kế cho phòng ngủ, phòng làm việc và căn hộ nhỏ,
-            ưu tiên vận hành êm, tiêu thụ điện thấp và khả năng đồng bộ dữ liệu
-            ổn định.
-          </p>
-        </div>
-        <div className="overflow-hidden rounded-lg border border-[#cbd8d4] bg-white">
-          <dl className="divide-y divide-[#e2ded5]">
+    <section id="specs" className={sectionStyles.soft}>
+      <div
+        className={`${layoutStyles.container} grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start`}
+      >
+        <SectionHeader
+          eyebrow="Thông số kỹ thuật"
+          title="Gọn gàng trên bàn, đủ sâu cho dữ liệu môi trường."
+          body="AuraHub được thiết kế cho phòng ngủ, phòng làm việc và căn hộ nhỏ, ưu tiên vận hành êm, tiêu thụ điện thấp và khả năng đồng bộ dữ liệu ổn định."
+        />
+        <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-card">
+          <dl className="divide-y divide-border">
             {specs.map((spec) => (
               <SpecRow key={spec.label} spec={spec} />
             ))}

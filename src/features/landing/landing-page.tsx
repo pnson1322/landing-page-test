@@ -9,7 +9,7 @@ import { SpecsSection } from "@/features/landing/components/sections/specs-secti
 
 export function LandingPage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f7f5f0] text-[#17212b]">
+    <main className="min-h-screen overflow-hidden bg-background text-text-primary">
       <SiteHeader />
       <HeroSection />
       <FeaturesSection />

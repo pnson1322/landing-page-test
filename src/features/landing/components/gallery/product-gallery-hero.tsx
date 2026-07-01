@@ -20,13 +20,13 @@ export function ProductGalleryHero({
   onPrevious,
 }: ProductGalleryHeroProps) {
   return (
-    <div className="h-full rounded-lg bg-white shadow-[0_24px_70px_rgba(23,33,43,0.1)] transition duration-300 hover:scale-[1.004] hover:shadow-[0_32px_92px_rgba(23,33,43,0.16)]">
-      <div className="relative h-full overflow-hidden rounded-lg border border-[#ddd7cc] bg-[#f7f5f0]">
+    <div className="h-full rounded-3xl bg-surface shadow-card transition duration-300 hover:scale-[1.004] hover:shadow-elevated">
+      <div className="relative h-full overflow-hidden rounded-3xl border border-border bg-background">
         <button
           type="button"
           onClick={onOpen}
           aria-label="Mở ảnh sản phẩm phóng to"
-          className="group block h-full w-full cursor-zoom-in overflow-hidden text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#147a7e]"
+          className="group block h-full w-full cursor-zoom-in overflow-hidden text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         >
           <Image
             key={image.src}
