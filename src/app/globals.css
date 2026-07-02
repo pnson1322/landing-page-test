@@ -84,6 +84,44 @@ body {
   animation: gallery-modal-scale-out 180ms ease-out both;
 }
 
+.landing-toast {
+  animation: landing-toast-slide 4000ms ease both;
+}
+
+@keyframes landing-toast-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+
+  8%,
+  88% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+.landing-toast-progress {
+  animation: landing-toast-progress linear both;
+  transform-origin: left;
+  width: 100%;
+}
+
+@keyframes landing-toast-progress {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
 @keyframes gallery-modal-fade-in {
   from {
     opacity: 0;

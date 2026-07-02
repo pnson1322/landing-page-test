@@ -35,8 +35,19 @@ export function HeroSection() {
             ngủ, giúp không gian sống sạch hơn và dễ nghỉ ngơi hơn.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="#newsletter">Đăng ký nhận tin</ButtonLink>
-            <ButtonLink href="#details" variant="secondary">
+            <ButtonLink
+              href="#newsletter"
+              trackingLabel="hero_newsletter_cta"
+              trackingNotice="Đã ghi nhận click đăng ký"
+            >
+              Đăng ký nhận tin
+            </ButtonLink>
+            <ButtonLink
+              href="#details"
+              trackingLabel="hero_details_cta"
+              trackingNotice="Đã ghi nhận click xem chi tiết"
+              variant="secondary"
+            >
               Xem chi tiết
             </ButtonLink>
           </div>

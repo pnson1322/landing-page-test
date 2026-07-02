@@ -6,18 +6,21 @@ import { ProductGallerySection } from "@/features/landing/components/sections/pr
 import { SiteFooter } from "@/features/landing/components/sections/site-footer";
 import { SiteHeader } from "@/features/landing/components/sections/site-header";
 import { SpecsSection } from "@/features/landing/components/sections/specs-section";
+import { LandingTrackingProvider } from "@/features/landing/components/tracking/landing-tracking-provider";
 
 export function LandingPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-background text-text-primary">
-      <SiteHeader />
-      <HeroSection />
-      <FeaturesSection />
-      <ProductDetailsSection />
-      <ProductGallerySection />
-      <SpecsSection />
-      <NewsletterSection />
-      <SiteFooter />
+      <LandingTrackingProvider>
+        <SiteHeader />
+        <HeroSection />
+        <FeaturesSection />
+        <ProductDetailsSection />
+        <ProductGallerySection />
+        <SpecsSection />
+        <NewsletterSection />
+        <SiteFooter />
+      </LandingTrackingProvider>
     </main>
   );
 }
