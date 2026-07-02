@@ -17,6 +17,7 @@ export function ProductDetailsSection() {
               src="/aurahub-angle.webp"
               alt="AuraHub nhìn từ góc nghiêng trong studio"
               fill
+              priority
               sizes="(min-width: 1024px) 46vw, 100vw"
               className="object-cover transition duration-500 hover:scale-[1.02]"
             />

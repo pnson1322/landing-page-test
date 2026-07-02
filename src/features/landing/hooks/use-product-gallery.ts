@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { MouseEvent } from "react";
 
+import { useLandingTracking } from "@/features/landing/components/tracking/landing-tracking-provider";
 import { productImages } from "@/features/landing/data";
 import type { ProductGalleryItem } from "@/features/landing/types/landing";
 
@@ -15,6 +16,7 @@ export function useProductGallery() {
   const closeTimeoutRef = useRef<number | null>(null);
   const hasSyncedActiveItemRef = useRef(false);
   const itemRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const { trackEvent } = useLandingTracking();
 
   const activeImage = productImages[activeIndex];
   const isModalVisible = isModalOpen || isModalClosing;
@@ -40,12 +42,28 @@ export function useProductGallery() {
   }, []);
 
   const showPrevious = useCallback(() => {
+    trackEvent(
+      {
+        type: "carousel_nav",
+        label: "previous",
+        metadata: { fromIndex: activeIndex },
+      },
+      { notice: "Đã ghi nhận chuyển ảnh" },
+    );
     goToSlide(activeIndex - 1);
-  }, [activeIndex, goToSlide]);
+  }, [activeIndex, goToSlide, trackEvent]);
 
   const showNext = useCallback(() => {
+    trackEvent(
+      {
+        type: "carousel_nav",
+        label: "next",
+        metadata: { fromIndex: activeIndex },
+      },
+      { notice: "Đã ghi nhận chuyển ảnh" },
+    );
     goToSlide(activeIndex + 1);
-  }, [activeIndex, goToSlide]);
+  }, [activeIndex, goToSlide, trackEvent]);
 
   const openModal = useCallback(() => {
     if (closeTimeoutRef.current) {
