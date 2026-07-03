@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## AuraHub Assistant
+
+The chatbot uses the Gemini API from a server-side route, so the API key is never exposed to the browser.
+
+1. Create a free Gemini API key at [Google AI Studio](https://aistudio.google.com/apikey).
+2. Copy `.env.local.example` to `.env.local`.
+3. Fill `GEMINI_API_KEY` with your key.
+4. Optionally adjust `GEMINI_MODEL`; the default is `gemini-3.1-flash-lite`.
+5. Restart the dev server after editing `.env.local`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

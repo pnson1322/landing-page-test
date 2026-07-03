@@ -1,4 +1,5 @@
-﻿import { FeaturesSection } from "@/features/landing/components/sections/features-section";
+import { ChatbotWidget } from "@/features/landing/components/chatbot/chatbot-widget";
+import { FeaturesSection } from "@/features/landing/components/sections/features-section";
 import { HeroSection } from "@/features/landing/components/sections/hero-section";
 import { NewsletterSection } from "@/features/landing/components/sections/newsletter-section";
 import { ProductDetailsSection } from "@/features/landing/components/sections/product-details-section";
@@ -20,6 +21,7 @@ export function LandingPage() {
         <SpecsSection />
         <NewsletterSection />
         <SiteFooter />
+        <ChatbotWidget />
       </LandingTrackingProvider>
     </main>
   );
