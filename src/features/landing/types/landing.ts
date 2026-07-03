@@ -8,6 +8,14 @@ export type ProductSpec = {
   value: string;
 };
 
+export type ChatMessageRole = "assistant" | "user";
+
+export type ChatMessage = {
+  content: string;
+  id: string;
+  role: ChatMessageRole;
+};
+
 export type ProductDetail = {
   title: string;
   description: string;

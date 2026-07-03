@@ -27,6 +27,7 @@ export function NewsletterForm() {
             className={inputClass}
             defaultValue=""
             placeholder="Nguyễn An"
+            spellCheck={false}
             type="text"
           />
           <span id="newsletter-name-error" className={errorClass}>
