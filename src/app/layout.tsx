@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
+import { ThemeProvider } from "@/features/landing/components/theme/theme-provider";
 import { siteConfig } from "@/features/landing/constants/site";
+import "./theme.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,8 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="vi" className="h-full antialiased" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

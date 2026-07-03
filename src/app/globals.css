@@ -1,28 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #0f766e;
-  --primary-dark: #0b5a54;
-  --primary-light: #ccfbf1;
-  --accent: #f59e0b;
-  --background: #f7f5f1;
-  --surface: #ffffff;
-  --surface-alt: #eef2f1;
-  --text-primary: #1c2321;
-  --text-secondary: #5b6b67;
-  --border: #e2e8e6;
-  --modal-backdrop: rgb(0 0 0 / 76%);
-  --glass-surface: rgb(255 255 255 / 68%);
-  --glass-soft: rgb(255 255 255 / 42%);
-  --shadow-card: 0 14px 34px rgb(28 35 33 / 8%);
-  --shadow-elevated: 0 24px 60px rgb(28 35 33 / 12%);
-  --shadow-hero: 0 28px 80px rgb(15 118 110 / 18%);
-  --shadow-primary: 0 18px 42px rgb(15 118 110 / 22%);
-  --shadow-modal: 0 34px 88px rgb(0 0 0 / 38%);
-  --font-sans-local: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-  --font-mono-local: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -36,6 +14,10 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-border: var(--border);
+  --color-deep-surface: var(--deep-surface);
+  --color-deep-text: var(--deep-text);
+  --color-deep-muted: var(--deep-muted);
+  --color-deep-border: var(--deep-border);
   --color-modal-backdrop: var(--modal-backdrop);
   --color-glass-surface: var(--glass-surface);
   --color-glass-soft: var(--glass-soft);
@@ -50,7 +32,7 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: var(--font-sans-local);
 }
 
@@ -87,9 +69,9 @@ body {
   background:
     linear-gradient(
       90deg,
-      rgb(226 232 230 / 62%) 0%,
-      rgb(247 245 241 / 82%) 42%,
-      rgb(226 232 230 / 62%) 84%
+      var(--surface-alt) 0%,
+      var(--background) 42%,
+      var(--surface-alt) 84%
     );
   background-size: 220% 100%;
   animation: image-skeleton-shimmer 1200ms ease-in-out infinite;

@@ -13,11 +13,11 @@ export function NewsletterForm() {
   return (
     <>
       <form
-        className="flex flex-col gap-4 rounded-2xl border border-surface/12 bg-surface/8 p-5 shadow-elevated backdrop-blur sm:p-6 lg:flex-row lg:items-start"
+        className="flex flex-col gap-4 rounded-2xl border border-deep-border bg-surface/10 p-5 shadow-elevated backdrop-blur sm:p-6 lg:flex-row lg:items-start"
         onSubmit={onSubmit}
         noValidate
       >
-        <label className="grid gap-2 text-sm font-medium text-surface-alt lg:flex-1">
+        <label className="grid gap-2 text-sm font-medium text-deep-muted lg:flex-1">
           Họ và tên
           <input
             {...register("name")}
@@ -33,7 +33,7 @@ export function NewsletterForm() {
             {errors.name?.message}
           </span>
         </label>
-        <label className="grid gap-2 text-sm font-medium text-surface-alt lg:flex-1">
+        <label className="grid gap-2 text-sm font-medium text-deep-muted lg:flex-1">
           Email
           <input
             {...register("email")}

@@ -7,7 +7,7 @@ export const sectionStyles = {
   background: "bg-background py-20 sm:py-24",
   surface: "bg-surface py-20 sm:py-24",
   soft: "bg-surface-alt py-20 sm:py-24",
-  dark: "bg-text-primary py-20 text-surface sm:py-24",
+  dark: "bg-deep-surface py-20 text-deep-text sm:py-24",
 };
 
 export const textStyles = {
@@ -16,9 +16,9 @@ export const textStyles = {
   headline:
     "mt-3 text-3xl font-semibold leading-[1.12] tracking-normal text-text-primary sm:text-4xl",
   headlineLight:
-    "mt-3 text-3xl font-semibold leading-[1.12] tracking-normal text-surface sm:text-4xl",
+    "mt-3 text-3xl font-semibold leading-[1.12] tracking-normal text-deep-text sm:text-4xl",
   body: "mt-5 text-base leading-7 text-text-secondary",
-  bodyLight: "mt-5 text-base leading-7 text-surface-alt",
+  bodyLight: "mt-5 text-base leading-7 text-deep-muted",
 };
 
 export const cardStyles = {

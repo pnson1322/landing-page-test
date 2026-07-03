@@ -54,7 +54,7 @@ function TrackingToastItem({ toast }: { toast: TrackingToast }) {
 
   return (
     <div
-      className="landing-toast pointer-events-auto relative flex min-w-72 items-center gap-3 overflow-hidden rounded-xl bg-white py-3.5 pl-0 pr-5 text-gray-800 shadow-lg sm:min-w-80"
+      className="landing-toast pointer-events-auto relative flex min-w-72 items-center gap-3 overflow-hidden rounded-xl bg-surface py-3.5 pl-0 pr-5 text-text-primary shadow-lg sm:min-w-80"
       style={{ animationDuration: `${toast.durationMs}ms` }}
     >
       <span className={`self-stretch rounded-l-xl ${config.bar} w-[3px]`} aria-hidden="true" />
