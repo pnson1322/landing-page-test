@@ -14,8 +14,7 @@ type ButtonLinkProps = {
 };
 
 const buttonVariants = {
-  primary:
-    "bg-primary text-surface shadow-primary hover:bg-primary-dark",
+  primary: "bg-primary text-surface shadow-primary hover:bg-primary-dark",
   secondary:
     "border border-border bg-surface text-text-primary shadow-card hover:bg-primary-light",
 };
@@ -48,7 +47,7 @@ export function ButtonLink({
     <a
       href={href}
       onClick={handleClick}
-      className={`inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 active:translate-y-0 ${focusStyles} ${buttonVariants[variant]}`}
+      className={`inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:translate-y-0 active:scale-[0.98] ${focusStyles} ${buttonVariants[variant]}`}
     >
       {children}
     </a>

@@ -1,8 +1,8 @@
-﻿import Image from "next/image";
 import type { MouseEvent } from "react";
 
 import { GalleryNavButtons } from "@/features/landing/components/gallery/gallery-nav-buttons";
 import { ModalCaption } from "@/features/landing/components/gallery/modal-caption";
+import { SkeletonImage } from "@/features/landing/components/motion/skeleton-image";
 import type { GalleryModalState, ProductImage } from "@/features/landing/types/landing";
 
 type ImageModalProps = {
@@ -46,7 +46,7 @@ export function ImageModal({
         }`}
         onClick={onContentClick}
       >
-        <Image
+        <SkeletonImage
           key={image.src}
           src={image.src}
           alt={image.alt}

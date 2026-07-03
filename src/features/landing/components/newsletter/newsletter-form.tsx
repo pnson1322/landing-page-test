@@ -3,7 +3,7 @@
 import { useNewsletterForm } from "@/features/landing/hooks/use-newsletter-form";
 
 const inputClass =
-  "h-12 rounded-xl border border-border bg-surface px-4 text-sm text-text-primary outline-none transition duration-200 placeholder:text-text-secondary hover:border-primary focus:border-primary focus:ring-4 focus:ring-primary-light";
+  "h-12 rounded-xl border border-border bg-surface px-4 text-sm text-text-primary outline-none transition duration-200 placeholder:text-text-secondary hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary/30";
 
 const errorClass = "min-h-5 text-xs font-medium leading-5 text-red-300";
 
@@ -52,7 +52,7 @@ export function NewsletterForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="h-12 w-full rounded-full bg-primary px-6 text-sm font-semibold whitespace-nowrap text-surface shadow-primary transition duration-200 hover:-translate-y-0.5 hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-75 disabled:hover:translate-y-0 lg:mt-7 lg:w-40 lg:flex-none"
+          className="h-12 w-full rounded-full bg-primary px-6 text-sm font-semibold whitespace-nowrap text-surface shadow-primary transition duration-200 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary active:translate-y-0 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-75 disabled:hover:translate-y-0 disabled:hover:scale-100 lg:mt-7 lg:w-40 lg:flex-none"
         >
           {isSubmitting ? (
             <span className="inline-flex items-center justify-center gap-2">

@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import { SkeletonImage } from "@/features/landing/components/motion/skeleton-image";
 import { ProductDetailCard } from "@/features/landing/components/sections/product-detail-card";
 import { ProductMetricCard } from "@/features/landing/components/sections/product-metric-card";
 import { SectionHeader } from "@/features/landing/components/ui/section-header";
@@ -13,7 +12,7 @@ export function ProductDetailsSection() {
       <div className={layoutStyles.container}>
         <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr] lg:items-stretch">
           <div className="relative min-h-[560px] overflow-hidden rounded-3xl border border-border bg-surface shadow-elevated lg:h-full">
-            <Image
+            <SkeletonImage
               src="/aurahub-angle.webp"
               alt="AuraHub nhìn từ góc nghiêng trong studio"
               fill
@@ -26,9 +25,10 @@ export function ProductDetailsSection() {
                 Hardware profile
               </p>
               <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
-                {productMetrics.map((metric) => (
+                {productMetrics.map((metric, index) => (
                   <ProductMetricCard
                     key={metric.label}
+                    delayMs={index * 70}
                     icon={metric.icon}
                     value={metric.value}
                     label={metric.label}
@@ -49,6 +49,7 @@ export function ProductDetailsSection() {
               {productDetails.map((detail, index) => (
                 <ProductDetailCard
                   key={detail.title}
+                  delayMs={index * 70}
                   detail={detail}
                   index={index}
                 />

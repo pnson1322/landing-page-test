@@ -16,8 +16,12 @@ export function SpecsSection() {
         />
         <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-card">
           <dl className="divide-y divide-border">
-            {specs.map((spec) => (
-              <SpecRow key={spec.label} spec={spec} />
+            {specs.map((spec, index) => (
+              <SpecRow
+                key={spec.label}
+                delayMs={index * 60}
+                spec={spec}
+              />
             ))}
           </dl>
         </div>

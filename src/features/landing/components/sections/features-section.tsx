@@ -12,8 +12,12 @@ export function FeaturesSection() {
           title="Một trung tâm nhỏ cho chất lượng sống mỗi ngày."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} feature={feature} />
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={feature.title}
+              delayMs={index * 70}
+              feature={feature}
+            />
           ))}
         </div>
       </div>
