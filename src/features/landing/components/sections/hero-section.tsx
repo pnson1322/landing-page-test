@@ -1,3 +1,4 @@
+import { SkeletonImage } from "@/features/landing/components/motion/skeleton-image";
 import { ButtonLink } from "@/features/landing/components/ui/button-link";
 import { siteConfig } from "@/features/landing/constants/site";
 import { layoutStyles } from "@/features/landing/constants/styles";
@@ -8,11 +9,16 @@ export function HeroSection() {
       className="relative overflow-hidden bg-background pt-24 sm:pt-28"
       aria-label="AuraHub"
     >
-      <div
-        className="absolute inset-0 bg-cover bg-[position:62%_center]"
-        style={{ backgroundImage: `url(${siteConfig.heroImage.src})` }}
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0" aria-hidden="true">
+        <SkeletonImage
+          src={siteConfig.heroImage.src}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[62%_center]"
+        />
+      </div>
       <div
         className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/76 to-background/10 lg:via-background/68 lg:to-transparent"
         aria-hidden="true"

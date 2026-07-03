@@ -1,3 +1,4 @@
+import { Reveal } from "@/features/landing/components/motion/reveal";
 import { textStyles } from "@/features/landing/constants/styles";
 
 type SectionHeaderProps = {
@@ -20,12 +21,10 @@ export function SectionHeader({
   const bodyStyle = inverse ? textStyles.bodyLight : textStyles.body;
 
   return (
-    <div className={`flex max-w-3xl flex-col ${alignment}`}>
-      <p className={textStyles.eyebrow}>
-        {eyebrow}
-      </p>
+    <Reveal className={`flex max-w-3xl flex-col ${alignment}`} threshold={0.12}>
+      <p className={textStyles.eyebrow}>{eyebrow}</p>
       <h2 className={headlineStyle}>{title}</h2>
       {body ? <p className={bodyStyle}>{body}</p> : null}
-    </div>
+    </Reveal>
   );
 }

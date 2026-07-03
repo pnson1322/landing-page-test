@@ -1,7 +1,6 @@
-﻿import Image from "next/image";
-
 import { GalleryNavButtons } from "@/features/landing/components/gallery/gallery-nav-buttons";
 import { ImageOverlay } from "@/features/landing/components/gallery/image-overlay";
+import { SkeletonImage } from "@/features/landing/components/motion/skeleton-image";
 import type { ProductImage } from "@/features/landing/types/landing";
 
 type ProductGalleryHeroProps = {
@@ -26,9 +25,9 @@ export function ProductGalleryHero({
           type="button"
           onClick={onOpen}
           aria-label="Mở ảnh sản phẩm phóng to"
-          className="group block h-full w-full cursor-zoom-in overflow-hidden text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+          className="group relative block h-full w-full cursor-zoom-in overflow-hidden text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         >
-          <Image
+          <SkeletonImage
             key={image.src}
             src={image.src}
             alt={image.alt}
