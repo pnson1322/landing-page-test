@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/features/landing/components/theme/theme-toggle";
 import { siteConfig } from "@/features/landing/constants/site";
 import { focusStyles } from "@/features/landing/constants/styles";
 
@@ -14,16 +15,19 @@ export function SiteHeader() {
         >
           {siteConfig.name}
         </a>
-        <div className="hidden items-center gap-2 text-sm font-semibold text-text-secondary sm:flex">
-          {siteConfig.navigation.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`rounded-full px-3 py-2 transition duration-200 hover:-translate-y-0.5 hover:bg-primary-light hover:text-primary active:translate-y-0 active:bg-primary active:text-surface ${focusStyles}`}
-            >
-              {item.label}
-            </a>
-          ))}
+        <div className="flex items-center gap-2">
+          <div className="hidden items-center gap-2 text-sm font-semibold text-text-secondary sm:flex">
+            {siteConfig.navigation.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`rounded-full px-3 py-2 transition duration-200 hover:-translate-y-0.5 hover:bg-primary-light hover:text-primary active:translate-y-0 active:bg-primary active:text-surface ${focusStyles}`}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </nav>
     </header>
